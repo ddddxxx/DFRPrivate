@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  DFRPrivate
+//
+//  Created by ddddxxx on 2018/12/10.
+//  Copyright © 2018 ddddxxx. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef OBFUSCATE_SYMBOLS
+
+#define DFRElementSetControlStripPresenceForIdentifier_ VPO8UNI6X6V6P5JE5I3J4GOUT2OOQILE
+#define DFRSystemModalShowsCloseBoxWhenFrontMost_       XK5D7G7U1ZVI74ZG34DYSB19XD7ZAXRY
+#define pDFRElementSetControlStripPresenceForIdentifier TPO7PGZDLDWQWF130JRMTCX4212H22R5
+#define pDFRSystemModalShowsCloseBoxWhenFrontMost       ZPRJWJ874YS4EYL02B3AGW9UP8C4ETKB
+
+#endif /* OBFUSCATE_SYMBOLS */
+
+#endif /* PrefixHeader_pch */
