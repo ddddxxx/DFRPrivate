@@ -19,6 +19,10 @@
     [NSTouchBarItem removeSystemTrayItem:self];
 }
 
++ (void)setControlStripPresence:(BOOL)present for:(NSTouchBarItemIdentifier)identifier {
+    DFRElementSetControlStripPresenceForIdentifier_(identifier, present);
+}
+
 - (void)setControlStripPresence:(BOOL)present {
     DFRElementSetControlStripPresenceForIdentifier_(self.identifier, present);
 }

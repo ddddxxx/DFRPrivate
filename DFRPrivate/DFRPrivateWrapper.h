@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeFromSystemTray;
 
 /// Wrapper of `DFRElementSetControlStripPresenceForIdentifier`
++ (void)setControlStripPresence:(BOOL)present for:(NSTouchBarItemIdentifier)identifier;
+
 - (void)setControlStripPresence:(BOOL)present;
 
 @end
