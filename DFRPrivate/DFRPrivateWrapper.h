@@ -32,6 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)presentAsSystemModalForItemIdentifier:(NSTouchBarItemIdentifier)identifier;
 
+- (void)presentAsSystemModalForItemIdentifier:(NSTouchBarItemIdentifier)identifier placement:(BOOL)placement;
+
 - (void)dismissSystemModal;
 
 - (void)minimizeSystemModal;

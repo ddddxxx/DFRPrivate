@@ -45,6 +45,19 @@
     }
 }
 
+- (void)presentAsSystemModalForItemIdentifier:(NSTouchBarItemIdentifier)identifier placement:(BOOL)placement {
+    long long hideControlStrip = placement ? 1 : 0;
+    if (@available(macOS 10.14, *)) {
+        [NSTouchBar presentSystemModalTouchBar:self
+                                     placement:hideControlStrip
+                      systemTrayItemIdentifier:identifier];
+    } else {
+        [NSTouchBar presentSystemModalFunctionBar:self
+                                        placement:hideControlStrip
+                         systemTrayItemIdentifier:identifier];
+    }
+}
+
 - (void)dismissSystemModal {
     if (@available(macOS 10.14, *)) {
         [NSTouchBar dismissSystemModalTouchBar:self];
